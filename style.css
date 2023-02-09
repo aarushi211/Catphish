@@ -1,0 +1,246 @@
+body {
+    background-color: black;
+
+}
+.alert{
+    position: relative;
+    height:100px;
+    width:100px;
+    right:300px;
+}
+button{
+    background-color: #347B70B8;
+    border-radius: 50px;
+    color: white;
+    position:relative;
+    bottom:490px;
+    left:350px;
+}
+img {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    left: 500px;
+    bottom: 600px;
+}
+
+.container {
+    position: absolute;
+    margin: auto;
+    top: 350px;
+    left: 0px;
+    right: 0;
+    bottom: 300px;
+    width: 300px;
+    height: 100px;
+}
+
+.container .search {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background: rgba(39, 96, 91, 0.861);
+    border-radius: 50%;
+    transition: all 1s;
+    z-index: 4;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+}
+
+.container .search:hover {
+    cursor: pointer;
+}
+
+.container .search::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 22px;
+    right: 0;
+    bottom: 0;
+    left: 22px;
+    width: 12px;
+    height: 2px;
+    background: white;
+    transform: rotate(45deg);
+    transition: all 0.5s;
+}
+
+.container .search::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: -5px;
+    right: 0;
+    bottom: 0;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: all 0.5s;
+}
+
+.container input {
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background: rgba(39, 96, 91, 0.861);
+    color: white;
+    text-shadow: 0 0 10px rgba(39, 96, 91, 0.861);
+    padding: 0 80px 0 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 25px 0 rgba(39, 96, 91, 0.861), 0 20px 25px 0 rgba(0, 0, 0, 0.2);
+    transition: all 1s;
+    opacity: 0;
+    z-index: 5;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+}
+
+.container input:hover {
+    cursor: pointer;
+}
+
+.container input:focus {
+    width: 300px;
+    opacity: 1;
+    cursor: text;
+}
+
+.container input:focus~.search {
+    right: -250px;
+    background: #151515;
+    z-index: 6;
+}
+
+.container input:focus~.search::before {
+    top: 0;
+    left: 0;
+    width: 25px;
+}
+
+.container input:focus~.search::after {
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    border: none;
+    background: white;
+    border-radius: 0%;
+    transform: rotate(-45deg);
+}
+
+.container input::placeholder {
+    color: white;
+    opacity: 0.5;
+    font-weight: bolder;
+}
+
+.wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+}
+
+.typing-demo {
+    color: rgba(63, 150, 142, 0.861);
+    position: relative;
+    bottom: 300px;
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+/*.wave{
+    position: absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    height: 100%;
+    width: 100%;
+    background-position: 0 bottom;
+    background-repeat: repeat-x;
+    transform-origin: center bottom;
+    
+}
+@keyframes waves{
+    0% {transform:translateX(0) translateZ(0) scaleY(1);}
+    0% {transform:translateX(-25%) translateZ(0) scaleY(0.5);}
+    0% {transform:translateX(-50%) translateZ(0) scaleY(1);}
+
+
+}*/
+.custom-shape-divider-bottom-1675933996 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1675933996 svg {
+    position: relative;
+    display: block;
+    width: calc(237% + 1.3px);
+    height: 252px;
+}
+
+.custom-shape-divider-bottom-1675933996 .shape-fill {
+    fill: #347B70B8;
+}
+
+h2 {
+    color: white;
+    position: relative;
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-weight: 100;
+    bottom: 350px;
+    left: 350px;
+    width: 600px;
+    padding: 0px;
+
+}
+a{
+    text-decoration: none;
+    color:white;
+    position:relative;
+    bottom:360px;
+    left:550px;
+}
+a:hover{
+    color:grey;
+}
