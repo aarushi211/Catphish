@@ -22,8 +22,9 @@
     <div class="mb-4">
         <img src="./Images/catfish - Edited.png" alt="catfish" class="responsive">
         <div class="searchbar">
+            <form action = "{{ url_for('predict')}}"method="post">
             <input id="sub" type="text" placeholder="Search...">
-            <div class="search"></div>
+            <div class="search"></div></form>
           </div>
           <button class="button btn-lg btn-success" type="submit" id="sub">Check Site</button>
           <div class="card hide" id="info">
@@ -40,8 +41,9 @@
                 <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
             </svg>
         </div>
-        <div class="container-fluid">
-          <h2>Your One-Stop-Shop for Phishing Protection</h2></div>
+        <div class="container">
+            <h3>Its Time to let the Cat out of the Bag...</h3>
+        </div>
           <a target="_blank" href="https://cybermap.kaspersky.com/">View Live Threats</a>
           </div>
           </div>

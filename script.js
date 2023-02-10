@@ -16,6 +16,6 @@ else{
 document.getElementById("body").setAttribute("src",img);
 document.getElementById("res").innerHTML=` ${data}.`;
 document.getElementById("result").innerHTML=`Your site score is <strong>${report}</strong>.`;
-document.getElementById("info").setAttribute("class","card show");
+document.getElementById("info").setAttribute("class","show");
 
 });
