@@ -8,23 +8,17 @@ body {
     width:100px;
     right:300px;
 }
-button{
-    background-color: #347B70B8;
-    border-radius: 50px;
-    color: white;
-    position:relative;
-    bottom:490px;
-    left:350px;
-}
+
 img {
     position: relative;
-    height: 250px;
-    width: 250px;
-    left: 500px;
-    bottom: 600px;
+    height: auto;
+    max-width: 250px;
+    width: 100%;
+    left: 40%;
+    bottom:600px;
 }
 
-.container {
+.searchbar {
     position: absolute;
     margin: auto;
     top: 350px;
@@ -35,7 +29,7 @@ img {
     height: 100px;
 }
 
-.container .search {
+.searchbar .search {
     position: absolute;
     margin: auto;
     top: 0;
@@ -51,11 +45,11 @@ img {
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
 }
 
-.container .search:hover {
+.searchbar .search:hover {
     cursor: pointer;
 }
 
-.container .search::before {
+.searchbar .search::before {
     content: "";
     position: absolute;
     margin: auto;
@@ -70,7 +64,7 @@ img {
     transition: all 0.5s;
 }
 
-.container .search::after {
+.searchbar .search::after {
     content: "";
     position: absolute;
     margin: auto;
@@ -85,7 +79,7 @@ img {
     transition: all 0.5s;
 }
 
-.container input {
+.searchbar input {
     font-family: 'Inconsolata', monospace;
     position: absolute;
     margin: auto;
@@ -110,29 +104,29 @@ img {
     letter-spacing: 0.1em;
 }
 
-.container input:hover {
+.searchbar input:hover {
     cursor: pointer;
 }
 
-.container input:focus {
+.searchbar input:focus {
     width: 300px;
     opacity: 1;
     cursor: text;
 }
 
-.container input:focus~.search {
+.searchbar input:focus~.search {
     right: -250px;
     background: #151515;
     z-index: 6;
 }
 
-.container input:focus~.search::before {
+.searchbar input:focus~.search::before {
     top: 0;
     left: 0;
     width: 25px;
 }
 
-.container input:focus~.search::after {
+.searchbar input:focus~.search::after {
     top: 0;
     left: 0;
     width: 25px;
@@ -143,7 +137,7 @@ img {
     transform: rotate(-45deg);
 }
 
-.container input::placeholder {
+.searchbar input::placeholder {
     color: white;
     opacity: 0.5;
     font-weight: bolder;
@@ -228,7 +222,7 @@ h2 {
     font-family: monospace;
     font-size: 1.5rem;
     font-weight: 100;
-    bottom: 350px;
+    bottom: 400px;
     left: 350px;
     width: 600px;
     padding: 0px;
@@ -238,9 +232,34 @@ a{
     text-decoration: none;
     color:white;
     position:relative;
-    bottom:360px;
+    bottom:410px;
     left:550px;
 }
 a:hover{
     color:grey;
+}
+.hide{
+	display: none;
+	/* visibility: hidden; */
+}
+
+.show{
+	width:100%;
+	background: none;
+	margin:0 auto;
+	margin-top: 2%;
+	background:#81e448;	}
+.alert{
+    position: relative;
+    left:100px;
+}
+.button{
+    position: relative;
+    left:20%;
+    bottom:330px;
+    height:50px;
+    width:200px;
+    background: #347B70B8;
+    border-radius: 30px;
+    color: white;
 }

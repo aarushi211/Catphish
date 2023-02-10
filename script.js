@@ -1,15 +1,21 @@
-document.getElementById('sub').addEventListener('click',function(){
+document.getElementById("sub").addEventListener("click",function(){
 let img;
-let data='';
-let value= document.getElementById('sub').value;
-if(value==1){
-    data='This Site is PHISHED! Please report at ......';
-    img="D:\Github\Phishing\Images\alert.gif";
+let data="";
+let report= document.getElementById("sub").value;
+if(report==1){
+    data="This Site is PHISHED! Please report at ......";
+    img=".Images/alert.gif";
 }
-else if(value==0){
-    data='This Site is Safe! You may Proceed...';
-    img="D:\Github\Phishing\Images\alert.gif";
+else if(report==0){
+    data="This Site is Safe! You may Proceed...";
+    img=".Images/alert.gif";
 }
-document.getElementById('body').setAttribute("src",img);
-document.getElementById('res').innerHTML=` ${data}.`;
+else{
+    data="Value out of bounds"
+}
+document.getElementById("body").setAttribute("src",img);
+document.getElementById("res").innerHTML=` ${data}.`;
+document.getElementById("result").innerHTML=`Your site score is <strong>${report}</strong>.`;
+document.getElementById("info").setAttribute("class","card show");
+
 });
